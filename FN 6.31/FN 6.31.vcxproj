@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{56b23071-388e-400f-bcac-11678b1e6e3d}</ProjectGuid>
+    <RootNamespace>FN631</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;FN631_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;FN631_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;FN631_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;FN631_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)Gui;$(ProjectDir)Public;$(ProjectDir)external;$(ProjectDir)external/ImGui;$(ProjectDir)external/MinHook/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="external\ImGui\imgui.cpp" />
+    <ClCompile Include="external\ImGui\imgui_demo.cpp" />
+    <ClCompile Include="external\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="external\ImGui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="external\ImGui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="external\ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="external\ImGui\imgui_tables.cpp" />
+    <ClCompile Include="external\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="external\kiero\kiero.cpp" />
+    <ClCompile Include="external\kiero\minhook\src\buffer.c" />
+    <ClCompile Include="external\kiero\minhook\src\hde\hde32.c" />
+    <ClCompile Include="external\kiero\minhook\src\hde\hde64.c" />
+    <ClCompile Include="external\kiero\minhook\src\hook.c" />
+    <ClCompile Include="external\kiero\minhook\src\trampoline.c" />
+    <ClCompile Include="external\MinHook\src\buffer.c" />
+    <ClCompile Include="external\MinHook\src\hde\hde32.c" />
+    <ClCompile Include="external\MinHook\src\hde\hde64.c" />
+    <ClCompile Include="external\MinHook\src\hook.c" />
+    <ClCompile Include="external\MinHook\src\trampoline.c" />
+    <ClCompile Include="Game\SDK\AIModule_functions.cpp" />
+    <ClCompile Include="Game\SDK\AnimationBudgetAllocator_functions.cpp" />
+    <ClCompile Include="Game\SDK\AnimationSharing_functions.cpp" />
+    <ClCompile Include="Game\SDK\AnimGraphRuntime_functions.cpp" />
+    <ClCompile Include="Game\SDK\AssetRegistry_functions.cpp" />
+    <ClCompile Include="Game\SDK\AudioMixer_functions.cpp" />
+    <ClCompile Include="Game\SDK\Basic.cpp" />
+    <ClCompile Include="Game\SDK\BlueprintContext_functions.cpp" />
+    <ClCompile Include="Game\SDK\B_Melee_Generic_functions.cpp" />
+    <ClCompile Include="Game\SDK\CinematicCamera_functions.cpp" />
+    <ClCompile Include="Game\SDK\CommonInput_functions.cpp" />
+    <ClCompile Include="Game\SDK\CommonUI_functions.cpp" />
+    <ClCompile Include="Game\SDK\CoreUObject_functions.cpp" />
+    <ClCompile Include="Game\SDK\Engine_functions.cpp" />
+    <ClCompile Include="Game\SDK\EpicCMSUIFramework_functions.cpp" />
+    <ClCompile Include="Game\SDK\Foliage_functions.cpp" />
+    <ClCompile Include="Game\SDK\FortniteGame_functions.cpp" />
+    <ClCompile Include="Game\SDK\FortniteUI_functions.cpp" />
+    <ClCompile Include="Game\SDK\GameplayAbilities_functions.cpp" />
+    <ClCompile Include="Game\SDK\GameplayTags_functions.cpp" />
+    <ClCompile Include="Game\SDK\GameplayTasks_functions.cpp" />
+    <ClCompile Include="Game\SDK\Hotfix_functions.cpp" />
+    <ClCompile Include="Game\SDK\Lobby_functions.cpp" />
+    <ClCompile Include="Game\SDK\McpProfileSys_functions.cpp" />
+    <ClCompile Include="Game\SDK\MediaAssets_functions.cpp" />
+    <ClCompile Include="Game\SDK\MeshNetwork_functions.cpp" />
+    <ClCompile Include="Game\SDK\MovieSceneCapture_functions.cpp" />
+    <ClCompile Include="Game\SDK\MovieSceneTracks_functions.cpp" />
+    <ClCompile Include="Game\SDK\MovieScene_functions.cpp" />
+    <ClCompile Include="Game\SDK\NavigationSystem_functions.cpp" />
+    <ClCompile Include="Game\SDK\OnlineSubsystemUtils_functions.cpp" />
+    <ClCompile Include="Game\SDK\OnlineSubsystem_functions.cpp" />
+    <ClCompile Include="Game\SDK\PhysXVehicles_functions.cpp" />
+    <ClCompile Include="Game\SDK\RejoinWindow_functions.cpp" />
+    <ClCompile Include="Game\SDK\ReplicationGraph_functions.cpp" />
+    <ClCompile Include="Game\SDK\SocialUMG_functions.cpp" />
+    <ClCompile Include="Game\SDK\SubtitlesWidgets_functions.cpp" />
+    <ClCompile Include="Game\SDK\UMG_functions.cpp" />
+    <ClCompile Include="Gui\gui.cpp" />
+    <ClCompile Include="Gui\overlay.cpp" />
+    <ClCompile Include="hooks\hooks.cpp" />
+    <ClCompile Include="Private\aimbot.cpp" />
+    <ClCompile Include="Private\console.cpp" />
+    <ClCompile Include="Private\esp.cpp" />
+    <ClCompile Include="Private\log.cpp" />
+    <ClCompile Include="Private\maths.cpp" />
+    <ClCompile Include="Private\player.cpp" />
+    <ClCompile Include="Private\vehicle.cpp" />
+    <ClCompile Include="Private\weapon.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="external\ImGui\imconfig.h" />
+    <ClInclude Include="external\ImGui\imgui.h" />
+    <ClInclude Include="external\ImGui\imgui_impl_dx11.h" />
+    <ClInclude Include="external\ImGui\imgui_impl_dx9.h" />
+    <ClInclude Include="external\ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="external\ImGui\imgui_internal.h" />
+    <ClInclude Include="external\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="external\ImGui\imstb_textedit.h" />
+    <ClInclude Include="external\ImGui\imstb_truetype.h" />
+    <ClInclude Include="external\kiero\kiero.h" />
+    <ClInclude Include="external\kiero\minhook\include\MinHook.h" />
+    <ClInclude Include="external\kiero\minhook\src\buffer.h" />
+    <ClInclude Include="external\kiero\minhook\src\hde\hde32.h" />
+    <ClInclude Include="external\kiero\minhook\src\hde\hde64.h" />
+    <ClInclude Include="external\kiero\minhook\src\hde\pstdint.h" />
+    <ClInclude Include="external\kiero\minhook\src\hde\table32.h" />
+    <ClInclude Include="external\kiero\minhook\src\hde\table64.h" />
+    <ClInclude Include="external\kiero\minhook\src\trampoline.h" />
+    <ClInclude Include="external\MinHook\include\MinHook.h" />
+    <ClInclude Include="external\MinHook\src\buffer.h" />
+    <ClInclude Include="external\MinHook\src\hde\hde32.h" />
+    <ClInclude Include="external\MinHook\src\hde\hde64.h" />
+    <ClInclude Include="external\MinHook\src\hde\pstdint.h" />
+    <ClInclude Include="external\MinHook\src\hde\table32.h" />
+    <ClInclude Include="external\MinHook\src\hde\table64.h" />
+    <ClInclude Include="external\MinHook\src\trampoline.h" />
+    <ClInclude Include="Game\PropertyFixup.hpp" />
+    <ClInclude Include="Game\SDK\Account_classes.hpp" />
+    <ClInclude Include="Game\SDK\Account_structs.hpp" />
+    <ClInclude Include="Game\SDK\AIModule_classes.hpp" />
+    <ClInclude Include="Game\SDK\AIModule_parameters.hpp" />
+    <ClInclude Include="Game\SDK\AIModule_structs.hpp" />
+    <ClInclude Include="Game\SDK\AnimationBudgetAllocator_classes.hpp" />
+    <ClInclude Include="Game\SDK\AnimationBudgetAllocator_parameters.hpp" />
+    <ClInclude Include="Game\SDK\AnimationCore_structs.hpp" />
+    <ClInclude Include="Game\SDK\AnimationSharing_classes.hpp" />
+    <ClInclude Include="Game\SDK\AnimationSharing_parameters.hpp" />
+    <ClInclude Include="Game\SDK\AnimationSharing_structs.hpp" />
+    <ClInclude Include="Game\SDK\AnimGraphRuntime_classes.hpp" />
+    <ClInclude Include="Game\SDK\AnimGraphRuntime_parameters.hpp" />
+    <ClInclude Include="Game\SDK\AnimGraphRuntime_structs.hpp" />
+    <ClInclude Include="Game\SDK\AssetRegistry_classes.hpp" />
+    <ClInclude Include="Game\SDK\AssetRegistry_parameters.hpp" />
+    <ClInclude Include="Game\SDK\AssetRegistry_structs.hpp" />
+    <ClInclude Include="Game\SDK\AudioMixer_classes.hpp" />
+    <ClInclude Include="Game\SDK\AudioMixer_parameters.hpp" />
+    <ClInclude Include="Game\SDK\AudioMixer_structs.hpp" />
+    <ClInclude Include="Game\SDK\AudioPlatformConfiguration_structs.hpp" />
+    <ClInclude Include="Game\SDK\Basic.hpp" />
+    <ClInclude Include="Game\SDK\BlueprintContext_classes.hpp" />
+    <ClInclude Include="Game\SDK\BlueprintContext_parameters.hpp" />
+    <ClInclude Include="Game\SDK\B_Melee_Generic_classes.hpp" />
+    <ClInclude Include="Game\SDK\B_Melee_Generic_parameters.hpp" />
+    <ClInclude Include="Game\SDK\CinematicCamera_classes.hpp" />
+    <ClInclude Include="Game\SDK\CinematicCamera_MatineeTransition_classes.hpp" />
+    <ClInclude Include="Game\SDK\CinematicCamera_parameters.hpp" />
+    <ClInclude Include="Game\SDK\CinematicCamera_structs.hpp" />
+    <ClInclude Include="Game\SDK\ClientPilot_classes.hpp" />
+    <ClInclude Include="Game\SDK\CommonInput_classes.hpp" />
+    <ClInclude Include="Game\SDK\CommonInput_parameters.hpp" />
+    <ClInclude Include="Game\SDK\CommonInput_structs.hpp" />
+    <ClInclude Include="Game\SDK\CommonUI_classes.hpp" />
+    <ClInclude Include="Game\SDK\CommonUI_parameters.hpp" />
+    <ClInclude Include="Game\SDK\CommonUI_structs.hpp" />
+    <ClInclude Include="Game\SDK\CoreUObject_classes.hpp" />
+    <ClInclude Include="Game\SDK\CoreUObject_parameters.hpp" />
+    <ClInclude Include="Game\SDK\CoreUObject_structs.hpp" />
+    <ClInclude Include="Game\SDK\Engine_classes.hpp" />
+    <ClInclude Include="Game\SDK\Engine_parameters.hpp" />
+    <ClInclude Include="Game\SDK\Engine_structs.hpp" />
+    <ClInclude Include="Game\SDK\EpicCMSUIFramework_classes.hpp" />
+    <ClInclude Include="Game\SDK\EpicCMSUIFramework_parameters.hpp" />
+    <ClInclude Include="Game\SDK\EpicCMSUIFramework_structs.hpp" />
+    <ClInclude Include="Game\SDK\Foliage_classes.hpp" />
+    <ClInclude Include="Game\SDK\Foliage_parameters.hpp" />
+    <ClInclude Include="Game\SDK\Foliage_structs.hpp" />
+    <ClInclude Include="Game\SDK\FortniteGame_classes.hpp" />
+    <ClInclude Include="Game\SDK\FortniteGame_parameters.hpp" />
+    <ClInclude Include="Game\SDK\FortniteGame_structs.hpp" />
+    <ClInclude Include="Game\SDK\FortniteUI_classes.hpp" />
+    <ClInclude Include="Game\SDK\FortniteUI_parameters.hpp" />
+    <ClInclude Include="Game\SDK\FortniteUI_structs.hpp" />
+    <ClInclude Include="Game\SDK\GameplayAbilities_classes.hpp" />
+    <ClInclude Include="Game\SDK\GameplayAbilities_parameters.hpp" />
+    <ClInclude Include="Game\SDK\GameplayAbilities_structs.hpp" />
+    <ClInclude Include="Game\SDK\GameplayTags_classes.hpp" />
+    <ClInclude Include="Game\SDK\GameplayTags_parameters.hpp" />
+    <ClInclude Include="Game\SDK\GameplayTags_structs.hpp" />
+    <ClInclude Include="Game\SDK\GameplayTasks_classes.hpp" />
+    <ClInclude Include="Game\SDK\GameplayTasks_parameters.hpp" />
+    <ClInclude Include="Game\SDK\GameplayTasks_structs.hpp" />
+    <ClInclude Include="Game\SDK\GameSubCatalog_structs.hpp" />
+    <ClInclude Include="Game\SDK\Gauntlet_classes.hpp" />
+    <ClInclude Include="Game\SDK\Hotfix_classes.hpp" />
+    <ClInclude Include="Game\SDK\Hotfix_structs.hpp" />
+    <ClInclude Include="Game\SDK\InputCore_classes.hpp" />
+    <ClInclude Include="Game\SDK\InputCore_structs.hpp" />
+    <ClInclude Include="Game\SDK\JsonUtilities_classes.hpp" />
+    <ClInclude Include="Game\SDK\JsonUtilities_structs.hpp" />
+    <ClInclude Include="Game\SDK\LiveLinkInterface_classes.hpp" />
+    <ClInclude Include="Game\SDK\LiveLinkInterface_structs.hpp" />
+    <ClInclude Include="Game\SDK\Lobby_classes.hpp" />
+    <ClInclude Include="Game\SDK\Lobby_parameters.hpp" />
+    <ClInclude Include="Game\SDK\Lobby_structs.hpp" />
+    <ClInclude Include="Game\SDK\McpProfileSys_classes.hpp" />
+    <ClInclude Include="Game\SDK\McpProfileSys_parameters.hpp" />
+    <ClInclude Include="Game\SDK\McpProfileSys_structs.hpp" />
+    <ClInclude Include="Game\SDK\MediaAssets_classes.hpp" />
+    <ClInclude Include="Game\SDK\MediaAssets_parameters.hpp" />
+    <ClInclude Include="Game\SDK\MediaAssets_structs.hpp" />
+    <ClInclude Include="Game\SDK\MediaUtils_structs.hpp" />
+    <ClInclude Include="Game\SDK\MeshNetwork_classes.hpp" />
+    <ClInclude Include="Game\SDK\MeshNetwork_parameters.hpp" />
+    <ClInclude Include="Game\SDK\MeshNetwork_structs.hpp" />
+    <ClInclude Include="Game\SDK\MovieSceneCapture_classes.hpp" />
+    <ClInclude Include="Game\SDK\MovieSceneCapture_parameters.hpp" />
+    <ClInclude Include="Game\SDK\MovieSceneCapture_structs.hpp" />
+    <ClInclude Include="Game\SDK\MovieSceneTracks_classes.hpp" />
+    <ClInclude Include="Game\SDK\MovieSceneTracks_parameters.hpp" />
+    <ClInclude Include="Game\SDK\MovieSceneTracks_structs.hpp" />
+    <ClInclude Include="Game\SDK\MovieScene_classes.hpp" />
+    <ClInclude Include="Game\SDK\MovieScene_parameters.hpp" />
+    <ClInclude Include="Game\SDK\MovieScene_structs.hpp" />
+    <ClInclude Include="Game\SDK\NavigationSystem_classes.hpp" />
+    <ClInclude Include="Game\SDK\NavigationSystem_parameters.hpp" />
+    <ClInclude Include="Game\SDK\NavigationSystem_structs.hpp" />
+    <ClInclude Include="Game\SDK\OnlineSubsystemUtils_classes.hpp" />
+    <ClInclude Include="Game\SDK\OnlineSubsystemUtils_parameters.hpp" />
+    <ClInclude Include="Game\SDK\OnlineSubsystemUtils_structs.hpp" />
+    <ClInclude Include="Game\SDK\OnlineSubsystem_classes.hpp" />
+    <ClInclude Include="Game\SDK\OnlineSubsystem_parameters.hpp" />
+    <ClInclude Include="Game\SDK\OnlineSubsystem_structs.hpp" />
+    <ClInclude Include="Game\SDK\Overlay_classes.hpp" />
+    <ClInclude Include="Game\SDK\Overlay_structs.hpp" />
+    <ClInclude Include="Game\SDK\PacketHandler_classes.hpp" />
+    <ClInclude Include="Game\SDK\PacketHandler_structs.hpp" />
+    <ClInclude Include="Game\SDK\Party_classes.hpp" />
+    <ClInclude Include="Game\SDK\Party_structs.hpp" />
+    <ClInclude Include="Game\SDK\PhysXVehicles_classes.hpp" />
+    <ClInclude Include="Game\SDK\PhysXVehicles_parameters.hpp" />
+    <ClInclude Include="Game\SDK\PhysXVehicles_structs.hpp" />
+    <ClInclude Include="Game\SDK\PropertyPath_structs.hpp" />
+    <ClInclude Include="Game\SDK\RejoinWindow_classes.hpp" />
+    <ClInclude Include="Game\SDK\RejoinWindow_parameters.hpp" />
+    <ClInclude Include="Game\SDK\Rejoin_classes.hpp" />
+    <ClInclude Include="Game\SDK\Rejoin_structs.hpp" />
+    <ClInclude Include="Game\SDK\ReplicationGraph_classes.hpp" />
+    <ClInclude Include="Game\SDK\ReplicationGraph_parameters.hpp" />
+    <ClInclude Include="Game\SDK\ReplicationGraph_structs.hpp" />
+    <ClInclude Include="Game\SDK\SignificanceManager_classes.hpp" />
+    <ClInclude Include="Game\SDK\SlateCore_classes.hpp" />
+    <ClInclude Include="Game\SDK\SlateCore_structs.hpp" />
+    <ClInclude Include="Game\SDK\Slate_classes.hpp" />
+    <ClInclude Include="Game\SDK\Slate_structs.hpp" />
+    <ClInclude Include="Game\SDK\SocialTypes_structs.hpp" />
+    <ClInclude Include="Game\SDK\SocialUMG_classes.hpp" />
+    <ClInclude Include="Game\SDK\SocialUMG_parameters.hpp" />
+    <ClInclude Include="Game\SDK\SocialUMG_structs.hpp" />
+    <ClInclude Include="Game\SDK\SubtitlesWidgets_classes.hpp" />
+    <ClInclude Include="Game\SDK\SubtitlesWidgets_parameters.hpp" />
+    <ClInclude Include="Game\SDK\Subtitles_classes.hpp" />
+    <ClInclude Include="Game\SDK\UMG_classes.hpp" />
+    <ClInclude Include="Game\SDK\UMG_parameters.hpp" />
+    <ClInclude Include="Game\SDK\UMG_structs.hpp" />
+    <ClInclude Include="Game\SDK\WebBrowser_structs.hpp" />
+    <ClInclude Include="Game\UnrealContainers.hpp" />
+    <ClInclude Include="Game\UtfN.hpp" />
+    <ClInclude Include="Gui\gui.h" />
+    <ClInclude Include="Gui\overlay.h" />
+    <ClInclude Include="hooks\hooks.h" />
+    <ClInclude Include="Public\aimbot.h" />
+    <ClInclude Include="Public\Bones.h" />
+    <ClInclude Include="Public\Configuration.h" />
+    <ClInclude Include="Public\console.h" />
+    <ClInclude Include="Public\esp.h" />
+    <ClInclude Include="Public\log.h" />
+    <ClInclude Include="Public\maths.h" />
+    <ClInclude Include="Public\player.h" />
+    <ClInclude Include="Public\vehicle.h" />
+    <ClInclude Include="Public\weapon.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="external\kiero\minhook\dll_resources\MinHook.def" />
+    <None Include="Game\Assertions.inl" />
+    <None Include="Game\NameCollisions.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="external\kiero\minhook\dll_resources\MinHook.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
